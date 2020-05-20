@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content="Web Developer Site"/>
+        <meta name="keywords" content="HTML5, CSS3, Javascript, Online Tutorials"/>
+        <meta name="author" content="cyries"/>
+<!--        <meta http-equiv="refresh" content="30">-->
+        <title>HTML Tutorials</title>
+        <link rel="icon" href="images/w3tablogo.png"/>
+        <link rel="stylesheet" type="text/css" href="main.css"/>
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="titlelogo">
+                <a href="#" title="go to home">
+                    <img src="images/W3Schools_logo.png" alt="w3school_logo" width="290px" onmouseover="altersrc()" onmouseout="revertsrc()" id="w3school">
+                </a>
+            </div>
+            <div class="intro">
+                <h4>THE WORLD'S LARGEST WEB DEVELOPER SITE</h4>
+            </div>
+        </header>
+
+        <!--below this line is for main navbar-->
+        <nav>
+            <ul>
+                <li class="toggle"><a href="javascript:void(0)" onclick="toggles()" id="toggle">&#9776;</a></li>
+                <li class="home"><a href="#" title="Home" id="notshrink"><i class="fas fa-home"></i></a></li>
+                <li class="html"><a href="" title="HTML tutorials" class="active">HTML</a></li>
+                <li class="css"><a href="#" title="CSS tutorials">CSS</a></li>
+                <li class="javascript"><a href="#" title="Javascript tutorials">JAVASCRIPT</a></li>
+                <li class="sql"><a href="#" title="SQL tutorials">SQL</a></li>
+                <li class="python"><a href="#" title="PHYTON tutorials">PHYTON</a></li>
+                <li class="php"><a href="#" title="PHP tutorials">PHP</a></li>
+                <li class="bootstrap"><a href="#" title="Bootstrap tutorials">BOOTSTRAP</a></li>
+                <li class="howto"><a href="#" title="How To">HOW TO</a></li>
+
+                <li class="more"><a href="javascript:void(0)" onclick="showhidemore()" id="btnmore">MORE <i class="fas fa-caret-down" id="downmore"></i><i class='fa fa-caret-up' style="display:none" id="upmore"></i></a></li>
+                <li class="exercises"><a href="javascript:void(0)" onclick="showhideexcercises()" id="btnexercises">EXERCISES <i class="fas fa-caret-down" id="downexercises"></i><i class='fa fa-caret-up' style="display:none" id="upexercises"></i></a></li>
+
+                <li class="darkmode"><a href="#" title="Toggle Dark Mode" id="notshrink"><i class="fas fa-adjust"></i></a></li>
+                <li class="world"><a href="#" title="Translate W3School"><i class="fas fa-globe-africa"></i></a></li>
+                <li class="search"><a href="#" title="Seacrh W3School" id="notshrink"><i class="fas fa-search"></i></a></li>
+            </ul>
+
+                <div class="dropdowncontentmore" id="more">
+                    <div class="dropdowncontent htmlandcss">
+                        <h2>HTML and CSS</h2>
+                        <a href="#">Learn HTML</a>
+                        <a href="#">Learn CSS</a>
+                        <a href="#">Learn Bootstrap</a>
+                        <a href="#">Learn W3.CSS</a>
+                        <a href="#">Learn Colors</a>
+                        <a href="#">Learn Icons</a>
+                        <a href="#">Learn Graphics</a>
+                        <a href="#">Learn SVG</a>
+                        <a href="#">Learn Canvas</a>
+                        <a href="#">Learn How To</a>
+                        <a href="#">Learn Sass</a>
+                    </div>
+
+                    <div class="dropdowncontent javascript">
+                        <h2>Javascript</h2>
+                        <a href="#">Learn Javascript</a>
+                        <a href="#">Learn JQuery</a>
+                        <a href="#">Learn React</a>
+                        <a href="#">Learn AngularJS</a>
+                        <a href="#">Learn JSON</a>
+                        <a href="#">Learn AJAX</a>
+                        <a href="#">Learn W3.JS</a>
+                        <h2>Programming</h2>
+                        <a href="#">Learn Python</a>
+                        <a href="#">Learn Java</a>
+                        <a href="#">Learn C++</a>
+                        <a href="#">Learn C#</a>
+                        <a href="#">Learn Machine Learning</a>
+                    </div>
+
+                    <div class="dropdowncontent Serverside">
+                        <h2>Server Side</h2>
+                        <a href="#">Learn SQL</a>
+                        <a href="#">Learn PHP</a>
+                        <a href="#">Learn ASP</a>
+                        <a href="#">Learn Node.Js</a>
+                        <a href="#">Learn Raspberry Pi</a>
+                        <h2>Web Building</h2>
+                        <a href="#">Web Templates</a>
+                        <a href="#">Web Statistics</a>
+                        <a href="#">Web Certificates</a>
+                        <a href="#">Web Editor</a>
+                        <a href="#">Web Deployment</a>
+                        <a href="#">Test Your Typing Speed</a>
+                    </div>
+
+                    <div class="dropdowncontent XML">
+                        <h2>XML</h2>
+                        <a href="#">Learn XML</a>
+                        <a href="#">Learn XML AJAX</a>
+                        <a href="#">Learn XML DOM</a>
+                        <a href="#">Learn XML DTD</a>
+                        <a href="#">Learn XML Schema</a>
+                        <a href="#">Learn XSLT</a>
+                        <a href="#">Learn XPath</a>
+                        <a href="#">Learn XQuery</a>
+                    </div>
+                </div>
+                <div class="dropdowncontentexercises" id="excercises">
+                        <div class="dropdowncontent exercises">
+                            <h2>EXERCISES</h2>
+                            <a href="#">HTML Exercises</a>
+                            <a href="#">CSS Exercises</a>
+                            <a href="#">Javascript Exercises</a>
+                            <a href="#">SQL Exercises</a>
+                            <a href="#">PHP Exercises</a>
+                            <a href="#">Python Exercises</a>
+                            <a href="#">JQuery Exercises</a>
+                            <a href="#">Bootstrap Exercises</a>
+                            <a href="#">Java Exercises</a>
+                            <a href="#">C++ Exercises</a>
+                            <a href="#">C# Exercises</a>
+                        </div>
+
+                        <div class="dropdowncontent Quizzes">
+                            <h2>QUIZZES</h2>
+                            <a href="#">HTML Quiz</a>
+                            <a href="#">CSS Quiz</a>
+                            <a href="#">Javascript Quiz</a>
+                            <a href="#">SQL Quiz</a>
+                            <a href="#">PHP Quiz</a>
+                            <a href="#">Python Quiz</a>
+                            <a href="#">JQuery Quiz</a>
+                            <a href="#">Bootstrap Quiz</a>
+                            <a href="#">Java Quiz</a>
+                            <a href="#">C++ Quiz</a>
+                            <a href="#">C# Quiz</a>
+                            <a href="#">XML Quiz</a>
+                        </div>
+
+                        <div class="dropdowncontent Certificates">
+                            <h2>Certificates</h2>
+                            <a href="#">HTML Certificate</a>
+                            <a href="#">CSS Certificate</a>
+                            <a href="#">Javascript Certificate</a>
+                            <a href="#">SQL Certificate</a>
+                            <a href="#">PHP Certificate</a>
+                            <a href="#">Python Certificate</a>
+                            <a href="#">JQuery Certificate</a>
+                            <a href="#">Bootstrap Certificate</a>
+                            <a href="#">XML Certificates</a>
+                        </div>
+                    </div>
+        </nav>
+
+        <!--below this line is for cross navbar-->
+        <aside id="aside">
+            <ul>
+                <p>HTML Tutorial</p>
+                <li><a href="https://www.facebook.com" target="_top">HTML HOME</a></li>
+                <li><a href="#" onclick="content()">HTML Introduction</a></li>
+                <li><a href="#">HTML Editors</a></li>
+                <li><a href="#">HTML Basic</a></li>
+                <li><a href="#">HTML Elements</a></li>
+                <li><a href="#">HTML Attributes</a></li>
+                <li><a href="#">HTML Headings</a></li>
+                <li><a href="#">HTML Paragraphs</a></li>
+                <li><a href="#">HTML Styles</a></li>
+                <li><a href="#">HTML Formatting</a></li>
+                <li><a href="#">HTML Quotations</a></li>
+                <li><a href="#">HTML Comments</a></li>
+                <li><a href="#">HTML Colors</a></li>
+                <li><a href="#">HTML CSS</a></li>
+                <li><a href="#">HTML Links</a></li>
+                <li><a href="#">HTML Images</a></li>
+                <li><a href="#">HTML Tables</a></li>
+                <li><a href="#">HTML List</a></li>
+                <li><a href="#">HTML Blocks</a></li>
+                <li><a href="#">HTML Classes</a></li>
+                <li><a href="#">HTML Id</a></li>
+                <li><a href="#">HTML Iframes</a></li>
+                <li><a href="#">HTML Javascript</a></li>
+                <li><a href="#">HTML File Paths</a></li>
+                <li><a href="#">HTML Head</a></li>
+                <li><a href="#">HTML Layout</a></li>
+                <li><a href="#">HTML Responsive</a></li>
+                <li><a href="#">HTML Computercode</a></li>
+                <li><a href="#">HTML Semantics</a></li>
+                <li><a href="#">HTML Entities</a></li>
+                <li><a href="#">HTML Symbols</a></li>
+                <li><a href="#">HTML Emojis</a></li>
+                <li><a href="#">HTML Charset</a></li>
+                <li><a href="#">HTML URL Encode</a></li>
+                <li><a href="#">HTML XHTML</a></li>
+                <li><a href="#">HTML Syle Guide</a></li>
+            </ul>
+        </aside>
+
+        <!--below this line is for section-->
+        <section id="sec">
+            <div class="container">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar vulputate neque vel bibendum. Vestibulum sit amet velit cursus, lacinia mi nec, efficitur odio. Suspendisse quam sem, tincidunt in venenatis ut, maximus sed nisi. Aenean ligula magna, bibendum non erat in, pretium auctor sem. Phasellus ut quam quis quam semper posuere non in tellus. Fusce velit urna, mattis eu facilisis a, sodales sit amet eros. Maecenas quis posuere velit. Fusce maximus arcu augue, sit amet lobortis arcu imperdiet ut.
+
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer vel imperdiet ipsum, vitae accumsan tortor. Aliquam malesuada at justo ut egestas. Duis mattis euismod risus sit amet accumsan. Aenean pellentesque tempor turpis, eget scelerisque nisl pellentesque sed. Duis ac sapien felis. Duis sit amet velit rhoncus, eleifend ante vel, iaculis libero.
+
+            Curabitur eget nulla justo. Nunc hendrerit, lorem eu sagittis ullamcorper, augue dolor venenatis leo, pharetra pharetra urna nulla a erat. Phasellus tristique lacus non laoreet convallis. Quisque ut leo vel lorem pretium vehicula. In bibendum sagittis odio, et congue sem maximus at. In vehicula massa quam. Vestibulum pretium, est id congue rhoncus, mauris quam consequat augue, vitae congue quam metus ut arcu. Suspendisse nec justo leo.
+
+            Proin egestas turpis felis, eu congue ex scelerisque eu. Proin id placerat est. Aenean interdum efficitur leo eget ultricies. Sed leo ligula, ultrices sed arcu euismod, congue accumsan massa. Nunc consequat lorem eu elementum maximus. Proin et eleifend lectus, ac ultricies velit. Sed posuere lacinia pharetra. Aenean sed ex ut ipsum sollicitudin rutrum. Aliquam luctus libero nec tincidunt sollicitudin.
+
+            Vestibulum sed convallis lectus. Aenean a elit ut lacus pulvinar convallis. Fusce ac erat lectus. Proin in vestibulum sapien, ac sodales metus. Quisque placerat, mauris non mollis facilisis, enim nibh cursus urna, ut commodo quam sem id est. Sed venenatis nulla quam, in blandit magna placerat eget. Etiam rhoncus tempus magna, vel sollicitudin tellus. Aenean in enim eget felis egestas ultrices. Vivamus vestibulum nibh ac orci laoreet dignissim. Nunc eleifend dapibus arcu, nec hendrerit urna tristique ac. Vivamus efficitur, dolor maximus posuere mattis, eros odio rhoncus nibh, nec facilisis massa tortor id eros. Aenean pharetra odio vitae augue blandit, sed efficitur nibh mollis. In pharetra semper leo dapibus gravida. Nulla eleifend sed urna feugiat porttitor.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar vulputate neque vel bibendum. Vestibulum sit amet velit cursus, lacinia mi nec, efficitur odio. Suspendisse quam sem, tincidunt in venenatis ut, maximus sed nisi. Aenean ligula magna, bibendum non erat in, pretium auctor sem. Phasellus ut quam quis quam semper posuere non in tellus. Fusce velit urna, mattis eu facilisis a, sodales sit amet eros. Maecenas quis posuere velit. Fusce maximus arcu augue, sit amet lobortis arcu imperdiet ut.
+
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer vel imperdiet ipsum, vitae accumsan tortor. Aliquam malesuada at justo ut egestas. Duis mattis euismod risus sit amet accumsan. Aenean pellentesque tempor turpis, eget scelerisque nisl pellentesque sed. Duis ac sapien felis. Duis sit amet velit rhoncus, eleifend ante vel, iaculis libero.
+
+            Curabitur eget nulla justo. Nunc hendrerit, lorem eu sagittis ullamcorper, augue dolor venenatis leo, pharetra pharetra urna nulla a erat. Phasellus tristique lacus non laoreet convallis. Quisque ut leo vel lorem pretium vehicula. In bibendum sagittis odio, et congue sem maximus at. In vehicula massa quam. Vestibulum pretium, est id congue rhoncus, mauris quam consequat augue, vitae congue quam metus ut arcu. Suspendisse nec justo leo.
+
+            Proin egestas turpis felis, eu congue ex scelerisque eu. Proin id placerat est. Aenean interdum efficitur leo eget ultricies. Sed leo ligula, ultrices sed arcu euismod, congue accumsan massa. Nunc consequat lorem eu elementum maximus. Proin et eleifend lectus, ac ultricies velit. Sed posuere lacinia pharetra. Aenean sed ex ut ipsum sollicitudin rutrum. Aliquam luctus libero nec tincidunt sollicitudin.
+
+            Vestibulum sed convallis lectus. Aenean a elit ut lacus pulvinar convallis. Fusce ac erat lectus. Proin in vestibulum sapien, ac sodales metus. Quisque placerat, mauris non mollis facilisis, enim nibh cursus urna, ut commodo quam sem id est. Sed venenatis nulla quam, in blandit magna placerat eget. Etiam rhoncus tempus magna, vel sollicitudin tellus. Aenean in enim eget felis egestas ultrices. Vivamus vestibulum nibh ac orci laoreet dignissim. Nunc eleifend dapibus arcu, nec hendrerit urna tristique ac. Vivamus efficitur, dolor maximus posuere mattis, eros odio rhoncus nibh, nec facilisis massa tortor id eros. Aenean pharetra odio vitae augue blandit, sed efficitur nibh mollis. In pharetra semper leo dapibus gravida. Nulla eleifend sed urna feugiat porttitor.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar vulputate neque vel bibendum. Vestibulum sit amet velit cursus, lacinia mi nec, efficitur odio. Suspendisse quam sem, tincidunt in venenatis ut, maximus sed nisi. Aenean ligula magna, bibendum non erat in, pretium auctor sem. Phasellus ut quam quis quam semper posuere non in tellus. Fusce velit urna, mattis eu facilisis a, sodales sit amet eros. Maecenas quis posuere velit. Fusce maximus arcu augue, sit amet lobortis arcu imperdiet ut.
+
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer vel imperdiet ipsum, vitae accumsan tortor. Aliquam malesuada at justo ut egestas. Duis mattis euismod risus sit amet accumsan. Aenean pellentesque tempor turpis, eget scelerisque nisl pellentesque sed. Duis ac sapien felis. Duis sit amet velit rhoncus, eleifend ante vel, iaculis libero.
+
+            Curabitur eget nulla justo. Nunc hendrerit, lorem eu sagittis ullamcorper, augue dolor venenatis leo, pharetra pharetra urna nulla a erat. Phasellus tristique lacus non laoreet convallis. Quisque ut leo vel lorem pretium vehicula. In bibendum sagittis odio, et congue sem maximus at. In vehicula massa quam. Vestibulum pretium, est id congue rhoncus, mauris quam consequat augue, vitae congue quam metus ut arcu. Suspendisse nec justo leo.
+
+            Proin egestas turpis felis, eu congue ex scelerisque eu. Proin id placerat est. Aenean interdum efficitur leo eget ultricies. Sed leo ligula, ultrices sed arcu euismod, congue accumsan massa. Nunc consequat lorem eu elementum maximus. Proin et eleifend lectus, ac ultricies velit. Sed posuere lacinia pharetra. Aenean sed ex ut ipsum sollicitudin rutrum. Aliquam luctus libero nec tincidunt sollicitudin.
+
+            Vestibulum sed convallis lectus. Aenean a elit ut lacus pulvinar convallis. Fusce ac erat lectus. Proin in vestibulum sapien, ac sodales metus. Quisque placerat, mauris non mollis facilisis, enim nibh cursus urna, ut commodo quam sem id est. Sed venenatis nulla quam, in blandit magna placerat eget. Etiam rhoncus tempus magna, vel sollicitudin tellus. Aenean in enim eget felis egestas ultrices. Vivamus vestibulum nibh ac orci laoreet dignissim. Nunc eleifend dapibus arcu, nec hendrerit urna tristique ac. Vivamus efficitur, dolor maximus posuere mattis, eros odio rhoncus nibh, nec facilisis massa tortor id eros. Aenean pharetra odio vitae augue blandit, sed efficitur nibh mollis. In pharetra semper leo dapibus gravida. Nulla eleifend sed urna feugiat porttitor.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar vulputate neque vel bibendum. Vestibulum sit amet velit cursus, lacinia mi nec, efficitur odio. Suspendisse quam sem, tincidunt in venenatis ut, maximus sed nisi. Aenean ligula magna, bibendum non erat in, pretium auctor sem. Phasellus ut quam quis quam semper posuere non in tellus. Fusce velit urna, mattis eu facilisis a, sodales sit amet eros. Maecenas quis posuere velit. Fusce maximus arcu augue, sit amet lobortis arcu imperdiet ut.
+
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer vel imperdiet ipsum, vitae accumsan tortor. Aliquam malesuada at justo ut egestas. Duis mattis euismod risus sit amet accumsan. Aenean pellentesque tempor turpis, eget scelerisque nisl pellentesque sed. Duis ac sapien felis. Duis sit amet velit rhoncus, eleifend ante vel, iaculis libero.
+
+            Curabitur eget nulla justo. Nunc hendrerit, lorem eu sagittis ullamcorper, augue dolor venenatis leo, pharetra pharetra urna nulla a erat. Phasellus tristique lacus non laoreet convallis. Quisque ut leo vel lorem pretium vehicula. In bibendum sagittis odio, et congue sem maximus at. In vehicula massa quam. Vestibulum pretium, est id congue rhoncus, mauris quam consequat augue, vitae congue quam metus ut arcu. Suspendisse nec justo leo.
+
+            Proin egestas turpis felis, eu congue ex scelerisque eu. Proin id placerat est. Aenean interdum efficitur leo eget ultricies. Sed leo ligula, ultrices sed arcu euismod, congue accumsan massa. Nunc consequat lorem eu elementum maximus. Proin et eleifend lectus, ac ultricies velit. Sed posuere lacinia pharetra. Aenean sed ex ut ipsum sollicitudin rutrum. Aliquam luctus libero nec tincidunt sollicitudin.
+
+            Vestibulum sed convallis lectus. Aenean a elit ut lacus pulvinar convallis. Fusce ac erat lectus. Proin in vestibulum sapien, ac sodales metus. Quisque placerat, mauris non mollis facilisis, enim nibh cursus urna, ut commodo quam sem id est. Sed venenatis nulla quam, in blandit magna placerat eget. Etiam rhoncus tempus magna, vel sollicitudin tellus. Aenean in enim eget felis egestas ultrices. Vivamus vestibulum nibh ac orci laoreet dignissim. Nunc eleifend dapibus arcu, nec hendrerit urna tristique ac. Vivamus efficitur, dolor maximus posuere mattis, eros odio rhoncus nibh, nec facilisis massa tortor id eros. Aenean pharetra odio vitae augue blandit, sed efficitur nibh mollis. In pharetra semper leo dapibus gravida. Nulla eleifend sed urna feugiat porttitor.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar vulputate neque vel bibendum. Vestibulum sit amet velit cursus, lacinia mi nec, efficitur odio. Suspendisse quam sem, tincidunt in venenatis ut, maximus sed nisi. Aenean ligula magna, bibendum non erat in, pretium auctor sem. Phasellus ut quam quis quam semper posuere non in tellus. Fusce velit urna, mattis eu facilisis a, sodales sit amet eros. Maecenas quis posuere velit. Fusce maximus arcu augue, sit amet lobortis arcu imperdiet ut.
+
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer vel imperdiet ipsum, vitae accumsan tortor. Aliquam malesuada at justo ut egestas. Duis mattis euismod risus sit amet accumsan. Aenean pellentesque tempor turpis, eget scelerisque nisl pellentesque sed. Duis ac sapien felis. Duis sit amet velit rhoncus, eleifend ante vel, iaculis libero.
+
+            Curabitur eget nulla justo. Nunc hendrerit, lorem eu sagittis ullamcorper, augue dolor venenatis leo, pharetra pharetra urna nulla a erat. Phasellus tristique lacus non laoreet convallis. Quisque ut leo vel lorem pretium vehicula. In bibendum sagittis odio, et congue sem maximus at. In vehicula massa quam. Vestibulum pretium, est id congue rhoncus, mauris quam consequat augue, vitae congue quam metus ut arcu. Suspendisse nec justo leo.
+
+            Proin egestas turpis felis, eu congue ex scelerisque eu. Proin id placerat est. Aenean interdum efficitur leo eget ultricies. Sed leo ligula, ultrices sed arcu euismod, congue accumsan massa. Nunc consequat lorem eu elementum maximus. Proin et eleifend lectus, ac ultricies velit. Sed posuere lacinia pharetra. Aenean sed ex ut ipsum sollicitudin rutrum. Aliquam luctus libero nec tincidunt sollicitudin.
+
+            Vestibulum sed convallis lectus. Aenean a elit ut lacus pulvinar convallis. Fusce ac erat lectus. Proin in vestibulum sapien, ac sodales metus. Quisque placerat, mauris non mollis facilisis, enim nibh cursus urna, ut commodo quam sem id est. Sed venenatis nulla quam, in blandit magna placerat eget. Etiam rhoncus tempus magna, vel sollicitudin tellus. Aenean in enim eget felis egestas ultrices. Vivamus vestibulum nibh ac orci laoreet dignissim. Nunc eleifend dapibus arcu, nec hendrerit urna tristique ac. Vivamus efficitur, dolor maximus posuere mattis, eros odio rhoncus nibh, nec facilisis massa tortor id eros. Aenean pharetra odio vitae augue blandit, sed efficitur nibh mollis. In pharetra semper leo dapibus gravida. Nulla eleifend sed urna feugiat porttitor.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar vulputate neque vel bibendum. Vestibulum sit amet velit cursus, lacinia mi nec, efficitur odio. Suspendisse quam sem, tincidunt in venenatis ut, maximus sed nisi. Aenean ligula magna, bibendum non erat in, pretium auctor sem. Phasellus ut quam quis quam semper posuere non in tellus. Fusce velit urna, mattis eu facilisis a, sodales sit amet eros. Maecenas quis posuere velit. Fusce maximus arcu augue, sit amet lobortis arcu imperdiet ut.
+
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer vel imperdiet ipsum, vitae accumsan tortor. Aliquam malesuada at justo ut egestas. Duis mattis euismod risus sit amet accumsan. Aenean pellentesque tempor turpis, eget scelerisque nisl pellentesque sed. Duis ac sapien felis. Duis sit amet velit rhoncus, eleifend ante vel, iaculis libero.
+
+            Curabitur eget nulla justo. Nunc hendrerit, lorem eu sagittis ullamcorper, augue dolor venenatis leo, pharetra pharetra urna nulla a erat. Phasellus tristique lacus non laoreet convallis. Quisque ut leo vel lorem pretium vehicula. In bibendum sagittis odio, et congue sem maximus at. In vehicula massa quam. Vestibulum pretium, est id congue rhoncus, mauris quam consequat augue, vitae congue quam metus ut arcu. Suspendisse nec justo leo.
+
+            Proin egestas turpis felis, eu congue ex scelerisque eu. Proin id placerat est. Aenean interdum efficitur leo eget ultricies. Sed leo ligula, ultrices sed arcu euismod, congue accumsan massa. Nunc consequat lorem eu elementum maximus. Proin et eleifend lectus, ac ultricies velit. Sed posuere lacinia pharetra. Aenean sed ex ut ipsum sollicitudin rutrum. Aliquam luctus libero nec tincidunt sollicitudin.
+
+            Vestibulum sed convallis lectus. Aenean a elit ut lacus pulvinar convallis. Fusce ac erat lectus. Proin in vestibulum sapien, ac sodales metus. Quisque placerat, mauris non mollis facilisis, enim nibh cursus urna, ut commodo quam sem id est. Sed venenatis nulla quam, in blandit magna placerat eget. Etiam rhoncus tempus magna, vel sollicitudin tellus. Aenean in enim eget felis egestas ultrices. Vivamus vestibulum nibh ac orci laoreet dignissim. Nunc eleifend dapibus arcu, nec hendrerit urna tristique ac. Vivamus efficitur, dolor maximus posuere mattis, eros odio rhoncus nibh, nec facilisis massa tortor id eros. Aenean pharetra odio vitae augue blandit, sed efficitur nibh mollis. In pharetra semper leo dapibus gravida. Nulla eleifend sed urna feugiat porttitor.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar vulputate neque vel bibendum. Vestibulum sit amet velit cursus, lacinia mi nec, efficitur odio. Suspendisse quam sem, tincidunt in venenatis ut, maximus sed nisi. Aenean ligula magna, bibendum non erat in, pretium auctor sem. Phasellus ut quam quis quam semper posuere non in tellus. Fusce velit urna, mattis eu facilisis a, sodales sit amet eros. Maecenas quis posuere velit. Fusce maximus arcu augue, sit amet lobortis arcu imperdiet ut.
+
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer vel imperdiet ipsum, vitae accumsan tortor. Aliquam malesuada at justo ut egestas. Duis mattis euismod risus sit amet accumsan. Aenean pellentesque tempor turpis, eget scelerisque nisl pellentesque sed. Duis ac sapien felis. Duis sit amet velit rhoncus, eleifend ante vel, iaculis libero.
+
+            Curabitur eget nulla justo. Nunc hendrerit, lorem eu sagittis ullamcorper, augue dolor venenatis leo, pharetra pharetra urna nulla a erat. Phasellus tristique lacus non laoreet convallis. Quisque ut leo vel lorem pretium vehicula. In bibendum sagittis odio, et congue sem maximus at. In vehicula massa quam. Vestibulum pretium, est id congue rhoncus, mauris quam consequat augue, vitae congue quam metus ut arcu. Suspendisse nec justo leo.
+
+            Proin egestas turpis felis, eu congue ex scelerisque eu. Proin id placerat est. Aenean interdum efficitur leo eget ultricies. Sed leo ligula, ultrices sed arcu euismod, congue accumsan massa. Nunc consequat lorem eu elementum maximus. Proin et eleifend lectus, ac ultricies velit. Sed posuere lacinia pharetra. Aenean sed ex ut ipsum sollicitudin rutrum. Aliquam luctus libero nec tincidunt sollicitudin.
+
+            Vestibulum sed convallis lectus. Aenean a elit ut lacus pulvinar convallis. Fusce ac erat lectus. Proin in vestibulum sapien, ac sodales metus. Quisque placerat, mauris non mollis facilisis, enim nibh cursus urna, ut commodo quam sem id est. Sed venenatis nulla quam, in blandit magna placerat eget. Etiam rhoncus tempus magna, vel sollicitudin tellus. Aenean in enim eget felis egestas ultrices. Vivamus vestibulum nibh ac orci laoreet dignissim. Nunc eleifend dapibus arcu, nec hendrerit urna tristique ac. Vivamus efficitur, dolor maximus posuere mattis, eros odio rhoncus nibh, nec facilisis massa tortor id eros. Aenean pharetra odio vitae augue blandit, sed efficitur nibh mollis. In pharetra semper leo dapibus gravida. Nulla eleifend sed urna feugiat porttitor.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pulvinar vulputate neque vel bibendum. Vestibulum sit amet velit cursus, lacinia mi nec, efficitur odio. Suspendisse quam sem, tincidunt in venenatis ut, maximus sed nisi. Aenean ligula magna, bibendum non erat in, pretium auctor sem. Phasellus ut quam quis quam semper posuere non in tellus. Fusce velit urna, mattis eu facilisis a, sodales sit amet eros. Maecenas quis posuere velit. Fusce maximus arcu augue, sit amet lobortis arcu imperdiet ut.
+
+            Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer vel imperdiet ipsum, vitae accumsan tortor. Aliquam malesuada at justo ut egestas. Duis mattis euismod risus sit amet accumsan. Aenean pellentesque tempor turpis, eget scelerisque nisl pellentesque sed. Duis ac sapien felis. Duis sit amet velit rhoncus, eleifend ante vel, iaculis libero.
+
+            Curabitur eget nulla justo. Nunc hendrerit, lorem eu sagittis ullamcorper, augue dolor venenatis leo, pharetra pharetra urna nulla a erat. Phasellus tristique lacus non laoreet convallis. Quisque ut leo vel lorem pretium vehicula. In bibendum sagittis odio, et congue sem maximus at. In vehicula massa quam. Vestibulum pretium, est id congue rhoncus, mauris quam consequat augue, vitae congue quam metus ut arcu. Suspendisse nec justo leo.
+
+            Proin egestas turpis felis, eu congue ex scelerisque eu. Proin id placerat est. Aenean interdum efficitur leo eget ultricies. Sed leo ligula, ultrices sed arcu euismod, congue accumsan massa. Nunc consequat lorem eu elementum maximus. Proin et eleifend lectus, ac ultricies velit. Sed posuere lacinia pharetra. Aenean sed ex ut ipsum sollicitudin rutrum. Aliquam luctus libero nec tincidunt sollicitudin.
+
+            Vestibulum sed convallis lectus. Aenean a elit ut lacus pulvinar convallis. Fusce ac erat lectus. Proin in vestibulum sapien, ac sodales metus. Quisque placerat, mauris non mollis facilisis, enim nibh cursus urna, ut commodo quam sem id est. Sed venenatis nulla quam, in blandit magna placerat eget. Etiam rhoncus tempus magna, vel sollicitudin tellus. Aenean in enim eget felis egestas ultrices. Vivamus vestibulum nibh ac orci laoreet dignissim. Nunc eleifend dapibus arcu, nec hendrerit urna tristique ac. Vivamus efficitur, dolor maximus posuere mattis, eros odio rhoncus nibh, nec facilisis massa tortor id eros. Aenean pharetra odio vitae augue blandit, sed efficitur nibh mollis. In pharetra semper leo dapibus gravida. Nulla eleifend sed urna feugiat porttitor.
+            </div>
+        </section>
+
+        <script src="js/javascript.js"></script>
+    </body>
+</html>
